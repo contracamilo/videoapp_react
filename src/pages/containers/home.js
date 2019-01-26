@@ -22,7 +22,7 @@ class Home extends Component {
     //funcion evento de cierre
     handleCloseModal = (event) => {
         this.setState({
-            modalVisible: true,
+            modalVisible: false,
         })
     }
 
