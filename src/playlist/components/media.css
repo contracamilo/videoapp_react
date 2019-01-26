@@ -1,0 +1,26 @@
+.Media{
+    cursor: pointer;
+    width: 250px;
+    display: inline-block;
+    width: 260px;
+    vertical-align: top;
+    background-color: #e8e8e8;
+}
+
+.Media .text{
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    padding: 10px 20px 30px;
+    color: #333;
+
+}
+
+.Media h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #3f546c;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
