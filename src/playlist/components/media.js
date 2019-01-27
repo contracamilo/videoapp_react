@@ -26,32 +26,26 @@ class Media extends PureComponent{
         author: 'Camilo Rivera' 
     }
 
-    //ES7
-    // handleCLick = (event) => {
-    //     console.log(this.props.image)
-    //     this.setState({
-    //         author: 'Tom Waits',
-    //     })
-    // }
+    handleClick = (event) =>{
+        this.props.openModal(this.props)
+        
+    }
     
     render(){
-        // const styles = {
-        //     container:{
-        //         fontSize: 17,
-        //         backgroundColor: '#44546b',
-        //         color:'white',
-        //         padding: '30px',
-        //         cursor: 'pointer',
-        //         border: '1px solid red',
-        //         width: 250
-        //     }
-        // }
-        
-
-        
+        const styles = {
+            container:{
+                fontSize: 17,
+                backgroundColor: '#44546b',
+                color:'white',
+                padding: '30px',
+                cursor: 'pointer',
+                border: '1px solid red',
+                width: 250
+            }
+        }
         return(
             //jsx //className = Propiedadade
-            <div className="Media" onClick={this.props.handleClick}>   
+            <div className="Media" onClick={this.handleClick}>   
                 <div className="images" >
                     <img 
                         src= {this.props.cover}
